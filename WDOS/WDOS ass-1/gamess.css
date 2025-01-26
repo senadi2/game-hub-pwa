@@ -1,0 +1,321 @@
+/*headrer*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:  rgb(114, 60, 112);
+    border-bottom: 1px solid #ccc;
+    color: #ddd;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+ 
+
+.logo {
+    height: auto ;
+    width: 8%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:active {
+    text-decoration: underline;
+    color: red;
+    
+}
+
+
+nav {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.search input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Main */
+
+h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    background-color: rgb(137, 43, 100);
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.para {
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    margin:1%;
+    margin-bottom: 0px;
+
+}
+
+section {
+    text-align: center;
+    color: #fff;
+    background-color:#5C4D7D;
+    max-width: 1200px;
+    margin:0px 10px; 
+    padding: 0; 
+}
+
+
+.sech3 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    background-color: #892B64;
+    padding: 15px;
+
+}
+
+.image{
+    position: relative;
+    width: 100%;
+    margin: auto;
+
+}
+
+
+.image img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    margin-bottom: 5%;
+    max-width: 100%; 
+    height: auto; 
+    transition: transform 0.5s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.image .description {
+    font-family: 'Gill Sans MT Condensed', sans-serif;
+    font-size: 35px;
+    color: aliceblue;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 4%;
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+}
+
+.image:hover .description {
+    opacity: 1; 
+}
+
+
+.paragraphs {
+    font-family: 'Garamond', sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+    text-align: left;
+    margin-left: 18%;
+    margin-bottom: 10%;
+    padding: 20px;
+    
+}
+
+
+/* footer */
+footer {
+    color: rgb(white);
+    background-color: rgb(114, 60, 112);
+    margin: 0;
+    padding: 10px 0;
+    font-size: 15px; 
+}
+
+.lastpara {
+    font-size: 30px; 
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+#ghs {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2%;
+    padding: 1%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: rgb(141, 167, 195);
+    height: auto;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    margin: 0.5% 0;
+    padding: 0.5% 0;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 4em; 
+    padding: 3px 7px; 
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+.mov {
+    text-decoration: none;
+    padding: 3px 7px;
+    color: white;
+    margin-bottom: 1px;
+    font-size: 15px; 
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px; 
+    margin-bottom: 1px;
+    font-size: 15px; 
+}
+
+footer .contact input {
+    padding: 3px;
+    width: 150px; 
+}
+
+.copy {
+    font-size: 15px; 
+    text-align: left;
+    margin-top: 5px;
+}
+
+
+/* Desktop View for Sections */
+@media (min-width: 768px) {
+    section {
+        align-items: center;
+        width: 100%;
+        max-width: 1400PX;
+        margin: 20% auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+
+    .image {
+        max-width: 40%;
+        margin: 0;
+    }
+
+    .image img {
+        width: 60%;
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        margin-left: 6%;
+        margin-top: 5%;
+    }
+
+    .container .paragraphs {
+        margin: 0 0 0 20px; /* Add some space between image and text */
+        font-size: 25px;
+        color: aliceblue;
+
+
+    }
+
+    section h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+        text-align: center;
+        color: black;
+        margin-bottom: 15px;
+        padding: 30px;
+    }
+
+    .container .description {
+        display:flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+
+}

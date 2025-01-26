@@ -1,0 +1,265 @@
+/*headrer*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:  rgb(114, 60, 112);
+    border-bottom: 1px solid #ccc;
+    color: #ddd;
+}
+
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+ 
+
+.logo {
+    height: auto ;
+    width: 8%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.links a:active {
+    text-decoration: underline;
+    color: red;
+    
+}
+
+
+nav {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.search input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Main Page */
+
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: #adb5bd;
+}
+
+main h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    background-color: rgb(137, 43, 100);
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ .para1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 2%;
+    padding: 0%;
+    margin-top: 5%;
+ }
+
+
+section h2 {
+    font-size: 22px;
+    padding-left: 10px;
+    background-color: #455E89;
+    color: white;
+    border-bottom: 2px solid #ddd;
+    padding: 2%;
+    padding-bottom: 5px;
+    
+    
+}
+
+section p{
+    color: #333;
+    font: 20%;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #1780A1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+form button:hover {
+    background-color: #61a5c2;
+}
+
+
+
+/* footer */
+footer {
+    color: rgb(white);
+    background-color: rgb(114, 60, 112);
+    margin: 0;
+    padding: 10px 0;
+    font-size: 15px; 
+}
+
+.lastpara {
+    font-size: 30px; 
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+#ghs {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2%;
+    padding: 1%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: rgb(141, 167, 195);
+    height: auto;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    margin: 0.5% 0;
+    padding: 0.5% 0;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 4em; 
+    padding: 3px 7px; 
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+.mov {
+    text-decoration: none;
+    padding: 3px 7px;
+    color: white;
+    margin-bottom: 1px;
+    font-size: 15px; 
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px; 
+    margin-bottom: 1px;
+    font-size: 15px; 
+}
+
+footer .contact input {
+    padding: 3px;
+    width: 150px; 
+}
+
+.copy {
+    font-size: 15px; 
+    text-align: left;
+    margin-top: 5px;
+}
+
+
+/* Responsive Design */
+@media (min-width: 720px) {
+
+}
